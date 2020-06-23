@@ -67,7 +67,7 @@ position: absolute;
 }
 
 #ours {
-  background-image: url("assets/hat.jpg");
+  background-image: url("../assets/hat.jpg");
   background-position: center center;
   background-attachment: fixed;
   padding: 50px 0px;
