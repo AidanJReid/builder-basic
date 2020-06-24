@@ -69,15 +69,10 @@
     <!-- end navbar -->
 
     <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" style="height: 75vh">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/roof1.jpg" alt="First slide">
+          <img class="d-block w-100" src="assets/roof1.jpg" alt="First slide" style="">
           <div class="carousel-caption">
             <p class="carousel-title d-inline">Roy Roofer</p>
             <p class="carousel-below-title d-none d-md-block">Quality & Excellence. All Under One Roof</p>
@@ -94,18 +89,10 @@
           <img class="d-block w-100" src="assets/roof3.jpg" alt="Third slide">
           <div class="carousel-caption">
             <div class="carousel-title d-inline">Roy Roofer</div>
-            <div class="carousel-below-title d-none d-md-block">Quality & Excellence - All Under One Roof</div>
+            <div class="carousel-below-title d-none d-md-block">Quality & Excellence. All Under One Roof</div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
     <!-- End Carousel -->
 
@@ -140,7 +127,7 @@
           <div class="col-sm-12 col-md-4 text-center code code--small code--left aos-init aos-animate" data-aos="fade-right">
               <div class="icon-block">
                   <div class="text-center py-3">
-                      <i class="fa fa-car fa-3x"></i>
+                      <i class="fa fa-car fa-4x"></i>
                   </div>
                   <h5 class="text-uppercase icon-intro">Nationwide<br> Cover</h5>
                   <p>We cover all of Northern Ireland</p>
@@ -149,7 +136,7 @@
           <div class="col-sm-12 col-md-4 text-center code code--small code--left aos-init aos-animate" data-aos="fade-up">
               <div class="icon-block">
                   <div class="text-center py-3">
-                      <i class="fa fa-money fa-3x"></i>
+                      <i class="fa fa-money fa-4x"></i>
                   </div>
                   <h5 class="text-uppercase icon-intro">Free<br> Quote</h5>
                   <p>Contact us for your free quote</p>
@@ -158,7 +145,7 @@
           <div class="col-sm-12 col-md-4 text-center code code--small code--right aos-init aos-animate" data-aos="fade-left">
               <div class="icon-block">
                   <div class="text-center py-3">
-                      <i class="fa fa-gbp fa-3x"></i>
+                      <i class="fa fa-gbp fa-4x"></i>
                   </div>
                   <h5 class="text-uppercase icon-intro">Great <br>Rates</h5>
                   <p>Incredible value for money</p>
@@ -173,13 +160,18 @@
         <h1 class="pt-3 text-uppercase">Our Services</h1>
         <div class="row p-3">
           <div class="col-sm-12 col-md-4 text-center code code--small code--left aos-init aos-animate" data-aos="fade-up">
+            <div class="img-holder">
             <!-- <div class="container py-3 bg-warning"> -->
             <!-- <h4>Roofing</h4> -->
-            <a href="#">
             <img src="./assets/roof1.jpg" class="img-fluid" alt="proj1" id="proj1">
-            </a>
+            <div class="overlay-box text-center">
+              <a href="./assets/roof1.jpg" class="fancybox">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
             <!-- </div> -->
           </div>
+        </div>
           <div class="col-sm-12 col-md-4 text-center code code--small code--left aos-init aos-animate" data-aos="fade-up">
             <!-- <div class="container py-3 bg-warning"> -->
             <!-- <h4>Plastering</h4> -->
@@ -204,58 +196,95 @@
     <div class="container my-5" id="weird">
       <div class="row mx-auto text-center">
           <div class="col-xs-12 col-md-12">
-          <h2>We provide a <span style="color:orange">FREE QUOTE</span> to all interested parties</h2>
+          <h1>We provide a <span style="color:orange">FREE QUOTE</span> to all interested parties</h1>
           <h4>Unsure if we can help? Uncertain what the cost would be?</h4>
           <br>
-          <button type="button" class="btn btn-primary btn-lg shadow-lg mb-3 rounded">Contact Us</button>
+          <button type="button" class="btn btn-outline-warning btn-lg shadow-lg mb-3 rounded">Contact Us</button>
         </div>
       </div>
     </div>
     <!-- end free quote -->
 
-    <div class="container-fluid w-100 text-white text-center mb-5" style="background-color: red">
-      <h1 class="pt-3 text-uppercase">Our Customers</h1>
-      <div class="row p-3">
-        <div class="col-sm-12 col-md-3 text-center code code--small code--left aos-init aos-animate" data-aos="fade-up">
-          <!-- <div class="container py-3 bg-warning"> -->
-          <!-- <h4>Roofing</h4> -->
-          <a href="#">
-          <img src="./assets/roof1.jpg" class="img-fluid" alt="proj1" id="proj1">
-          </a>
-          <!-- </div> -->
-        </div>
-        <div class="col-sm-12 col-md-3 text-center code code--small code--left aos-init aos-animate" data-aos="fade-up">
-          <!-- <div class="container py-3 bg-warning"> -->
-          <!-- <h4>Plastering</h4> -->
-          <a href="#">
-          <img src="./assets/roof2.jpg" class="img-fluid" alt="proj2" id="proj2">
-          </a>
-          <!-- </div> -->
-        </div>
-        <div class="col-sm-12 col-md-3 text-center code code--small code--left aos-init aos-animate" data-aos="fade-up">
-          <!-- <div class="container py-3 bg-warning"> -->
-            <!-- <h4>Painting</h4> -->
-            <a href="#">
-          <img src="./assets/roof1.jpg" class="img-fluid" alt="proj3" id="proj3">
-          </a>
-          <!-- </div> -->
-        </div>
-        <div class="col-sm-12 col-md-3 text-center code code--small code--left aos-init aos-animate" data-aos="fade-up">
-          <!-- <div class="container py-3 bg-warning"> -->
-          <!-- <h4>Plastering</h4> -->
-          <a href="#">
-          <img src="./assets/roof2.jpg" class="img-fluid" alt="proj4" id="proj4">
-          </a>
-          <!-- </div> -->
-        </div>
+    <!-- our customers -->
+    <div class="container py-3" id="cust">
+      <h1 class="text-center" style="color:white; text-transform:uppercase;">Our Customers</h1>
+      <div class="row">
+        <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000" >
+                <div class="MultiCarousel-inner">
+                    <div class="item" style="height: 200px">
+                        <div class="pad15" style="height: 100%">
+                        </div>
+                    </div>
+                    <div class="item" style="height: 200px">
+                      <div class="pad15" style="height: 100%">
+                      </div>
+                    </div>
+                    <div class="item" style="height: 200px">
+                      <div class="pad15" style="height: 100%">
+                      </div>
+                    </div>
+                    <div class="item" style="height: 200px">
+                      <div class="pad15" style="height: 100%">
+                      </div>
+                    </div>
+                    <div class="item" style="height: 200px">
+                      <div class="pad15" style="height: 100%">
+                      </div>
+                    </div>
+                    <div class="item" style="height: 200px">
+                      <div class="pad15" style="height: 100%">
+                      </div>
+                    </div>
+                    <div class="item" style="height: 200px">
+                      <div class="pad15" style="height: 100%">
+                      </div>
+                    </div>
+                    <div class="item" style="height: 200px">
+                      <div class="pad15" style="height: 100%">
+                      </div>
+                   </div>
+                </div>
+                <button class="btn btn-primary leftLst"><</button>
+                <button class="btn btn-primary rightLst">></button>
+            </div>
       </div>
     </div>
 
-    <!-- free quote -->
-    <div class="container-fluid my-5">
-      <div class="row mx-auto text-center bg-success">
-          <div class="col-xs-12 col-md-12">
-          <h2>Here is where you show off your <span style="color:orange">SOCIALS!</span></h2>
+    <!-- counters -->
+    <div class="container-fluid my-5 py-4 text-center soc-counter" style="background: url(assets/bricks.jpg)">
+      <div class="container py-4" id="conflex">
+            <div class="item">
+            <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+            <div class="counter" data-target="5000">0</div>
+            <p>Likes</p>
+            </div>
+            <div class="item">
+              <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
+              <div class="counter" data-target="2000">0</div>
+              <p>Followers</p>
+            </div>
+            <div class="item">
+              <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+              <div class="counter" data-target="1000">0</div>
+              <p>Subscribers</p>
+            </div>
+          </div>
+    </div>
+    <!-- end free quote -->
+
+    <!-- map and reviews -->
+    <div class="container my-5" id="weird">
+      <div class="row mx-auto text-center">
+        <div class="col-sm-12 col-md-6 embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.361058701526!2d-6.2254905848169!3d53.390480879106555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e32ab400c55%3A0x315ba379240c5918!2sBeaumont%20Hospital!5e0!3m2!1sen!2sie!4v1579780991133!5m2!1sen!2sie" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+        <div class="col-xs-12 col-md-6 text-center">
+          <h2>Leave a review for us!</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam modi earum libero, impedit architecto amet magnam nihil voluptates ad aperiam, facilis hic eaque fuga consequatur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam repellendus excepturi sint fugit? Nulla illo quis a voluptas reiciendis!</p>
+          <a href="#" target="_blank">
+          <img src="assets/yell_reviews.jpg" alt="yell">
+        </a>
         </div>
       </div>
     </div>
@@ -308,7 +337,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="./js/app.js"></script>
+  <script src="js/app.js"></script>
 </div>
 </body>
 
