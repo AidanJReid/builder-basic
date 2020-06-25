@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
@@ -28,13 +28,12 @@ body {
   background-color: orange;
 }
 
-.container-fluid {
+#fullpage {
   padding:0 !important;
 }
 
-.soc-counter {
+#soc-counter, #form-section {
   position: relative;
-  padding: 90px 0px 85px 0px;
   background-repeat: no repeat !important;
   background-size: cover !important;
   overflow: hidden;
@@ -46,7 +45,7 @@ body {
   justify-content: space-around;
 }
 
-.soc-counter:before {
+#soc-counter:before {
   content: '';
   position: absolute;
   left: 0px;
@@ -55,6 +54,18 @@ body {
   height: 100%;
   z-index: 0;
   background: rgba(6, 13, 33, 0.8);
+  color: white;
+}
+
+#form-section:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgba(6, 13, 33, 0.9);
   color: white;
 }
 
@@ -76,7 +87,6 @@ position: absolute;
 }
 
 .carousel-title {
-  /* background-color: royalblue; */
   background-color: rgb(207, 118, 15);
   opacity: 0.88 !important;
   padding: 5px 10px;
@@ -84,7 +94,6 @@ position: absolute;
 }
 
 .carousel-below-title {
-  background-color: orange;
   background-color: royalblue;
   opacity: 0.88 !important;
   padding-top: 5px !important;
@@ -100,41 +109,34 @@ position: absolute;
 
 #cust {
   background: url("../assets/roof3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* 
-.overlay-box {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  padding-top: 33%;
-  border-radius: 5px;
-  transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
-  transition: all 500ms ease;
-}
-
-.img-holder {
-  position: relative;
-}
-
-.overlay-box a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-} */
+/* Our services */
 
 #ours {
   background-image: url("../assets/hat.jpg");
   background-position: center center;
   background-attachment: fixed;
-  padding: 50px 0px;
+  padding: 20px 0px;
   background-size: cover;
+}
+
+.ourtitle {
+  background-color: rgb(207, 118, 15);
+  opacity: 0.88 !important;
+  padding: 5px 10px;
+  font-size: 3rem;
+}
+
+.card {
+  height: 27rem;
+}
+
+.card-img-top {
+  height: 15em !important;
 }
 
 .counter {
@@ -189,6 +191,16 @@ position: absolute;
     
 .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
   pointer-events: none; background:#ccc; 
+}
+
+/* footer */
+
+/* #form-section {
+  opacity: 0.88 !important;
+} */
+
+#bottompage {
+  border-top: 1px solid #3b3f4a;
 }
 
 @media (min-width: 2560px) {
