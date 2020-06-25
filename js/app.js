@@ -5,7 +5,7 @@ $(window).scroll(function() {
       wS = $(this).scrollTop();
 
       counters = document.querySelectorAll('.counter');
-      const speed = 1500;
+      const speed = 1200;
 
   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
   counters.forEach(counter => {
