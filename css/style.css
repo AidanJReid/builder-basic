@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-html, body {
+body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
@@ -108,10 +108,25 @@ position: absolute;
 }
 
 #cust {
-  background: url("../assets/roof3.jpg");
+  background: url("../assets/cust2.jpg");
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  background-repeat: no repeat !important;
+  background-size: cover !important;
+  overflow: hidden;
+  
+}
+
+#cust:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgba(6, 13, 33, 0.6);
+  color: white;
 }
 
 /* Our services */
@@ -197,15 +212,19 @@ position: absolute;
   opacity: 0.88 !important;
 } */
 
+.footlinks p a {
+  color: white !important;
+}
+
 #bottompage {
   border-top: 1px solid #3b3f4a;
 }
 
-@media (min-width: 2560px) {
-  /* #weird {
-    margin-top: 120px !important; */
+@media only screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
 }
-
 
 @media only screen and (max-width: 600px) {
   #logo {
@@ -222,25 +241,7 @@ position: absolute;
   .carousel-caption {
     top: 80px !important;
   }
-  #weird {
-    /* padding-top: 350px !important; */
+  html, body {
+    overflow-x: hidden !important;
   }
-}
-
-@media only screen and (max-width: 426px) {
-  #weird {
-    /* margin-top: 300px !important; */
-}
-}
-
-@media only screen and (max-width: 376px) {
-  #weird {
-    /* margin-top: 180px !important; */
-}
-}
-
-@media only screen and (max-width: 321px) {
-  #weird {
-    /* margin-top: 80px !important; */
-}
 }
